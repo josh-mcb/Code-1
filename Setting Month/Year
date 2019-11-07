@@ -1,0 +1,28 @@
+void UUDate::SetDay(int day) {
+	if (isValidDay(day)) {
+		day_ = day;
+	}
+}
+
+int UUDate::GetMonth() const {
+	return month_;
+	//TODO - Add your implementation here
+}
+
+void UUDate::SetMonth(int month) {
+	if (month > 0 && month < 13) {
+		month_ = month;
+	}
+
+}
+
+int UUDate::GetYear() const {
+	return year_;
+	//TODO - Add your implementation here
+}
+
+void UUDate::SetYear(int year) {
+	if (year >= 1000 && year < 10000) {
+		year_ = year;
+	}
+}
